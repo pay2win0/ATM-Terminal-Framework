@@ -9,15 +9,24 @@ int main()
     int count = 0;
     int entry;
     double deposit = 0.0;
+    
     double balance = 0.0;
+    
+    
     double withdraw = 0.0;
+    
     bool isTrue = true;
+    
 
-    system ("Color 3C"); //change colour
+    system ("XX"); //change colour
+    
+    
+    
     do
     (
         
-     cout << "***Welcome to The Bank of England***\n";
+     cout << "***Welcome to X***\n"; //nom
+        
      cout <<"Enter Pin:\n";
      cin >> pin;
 
@@ -25,35 +34,45 @@ int main()
     (
         do
         (
-cout << "***Welcome to The Bank of England**\n" //enter note
+cout << "***Welcome to X**\n" //enter note
             << "1. Deposit\n"
+            
             << "2. Withdraw\n"
+            
             << "3. Balance\n"  
+            
             << "4. Exit\n";
+            
         cout << "Choose an option:\n"
         cin >> entry;
         switch(entry)
         (
+            
         case 1:
             cout << "Deposit amount:\n";
             cin >> deposit;
             balance = balance + deposit;
+            
             break;
         case 2:
             cout << "withdraw amount:\n";
             cin >> withdraw;
+            
             balance = balance - withdraw;
             break;
+            
         case 3:
             cout << "Current balance" << balance <<end1;
             break;
         case 4:
-            cout << "Goodbye friend! o/ \n";
+            cout << "Goodbye mon ami! o/ \n";
+            
             isTrue = false;
             break;
 
         )
         )while(isTrue != false);
+        
         
     )
   else
@@ -61,6 +80,7 @@ cout << "***Welcome to The Bank of England**\n" //enter note
     count++;
         if(count == 4)
             isTrue = false;
+      
         else    
             cout << "Wrong Pin!\n"
   )
@@ -68,6 +88,7 @@ cout << "***Welcome to The Bank of England**\n" //enter note
     )
   
  )while(IsTrue) !=false)
+    
 
 
     return 0;
